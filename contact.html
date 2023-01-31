@@ -1,6 +1,89 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      * {
+         box-sizing: border-box;
+      }
+      .openChatBtn {
+     box-shadow: 0px 0px 20px 5px #46c8df;
+     display: block;
+     position: fixed;
+     bottom: 45px;
+     right: 15px;
+     z-index: 99;
+     font-size: 24px;
+     cursor: pointer;
+     color: #fff;
+     width: 45px;
+     height: 45px;
+     line-height: 35px;
+     border-width: initial;
+     border-style: none;
+     border-color: initial;
+     -o-border-image: initial;
+     border-image: initial;
+     outline: none;
+     background: var(--primary-color);
+     padding: 0px;
+     border-radius: 50px;
+     transition: all 0.5s ease-out 0s;
+      }
+      .openChat {
+         display: none;
+         position: fixed;
+         bottom: 0;
+         right: 15px;
+         z-index: 9;
+      }
+      form {
+         max-width: 300px;
+         padding: 10px;
+         background-color: white;
+      }
+      form textarea {
+         width: 100%;
+         font-size: 18px;
+         padding: 15px;
+         margin: 5px 0 22px 0;
+         border: none;
+         font-weight: 500;
+         background: #d5e7ff;
+         color: rgb(0, 0, 0);
+         resize: none;
+         min-height: 200px;
+      }
+      form textarea:focus {
+         background-color: rgb(219, 255, 252);
+         outline: none;
+      }
+      form .btn {
+         background-color: rgb(34, 197, 107);
+         color: white;
+         padding: 16px 20px;
+         font-weight: bold;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+         margin-bottom: 10px;
+         opacity: 0.8;
+      }
+      form .btnclose {
+         background-color: red;
+         color: white;
+         padding: 16px 20px;
+         font-weight: bold;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+         margin-bottom: 10px;
+         opacity: 0.8;
+      }
+      form .btn:hover, .openChatBtn:hover {
+         opacity: 1;
+      }
+         
+       </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -238,31 +321,49 @@
           </div>
       </div>
   </div>
-  <!-- move top -->
-  <button onclick="topFunction()" id="movetop" title="Go to top">
-    <span class="fa fa-angle-up"></span>
-  </button>
-  <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-      scrollFunction()
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("movetop").style.display = "block";
-      } else {
-        document.getElementById("movetop").style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <!-- /move top -->
+  <button class="openChatBtn" onclick="openForm()"><span class="fa fa-coffee"></span></button>
+  <div class="openChat">
+     <input type="button"  onclick="closeForm()" 
+      style="
+      display: block;
+background: url('assets/images/colse.jpg');
+background-position:center;
+background-repeat:no-repeat;
+box-shadow: 0px 0px 10px 1px #000000;
+position: fixed;
+text-align: center;
+bottom: 365px; 
+right: 25px;
+z-index: 99;
+font-size: 24px;
+cursor: pointer;
+color: #fff;
+width: 25px; 
+height: 25px;
+line-height: 35px;
+border-style: none;
+outline: none;
+padding: 0px;
+border-radius: 50px;
+transition: all 0.5s ease-out 0s;
+      "> 
+     <iframe src="https://webchat.botframework.com/embed/Dostea-bot?s=PTThQ-bKlx8.7KbNME-hoBiP152J1_P7P-tU1THRsl748kCL1PmevN0" style="border: solid #0cc4f1; border-radius: 30px; height: 400px; max-height: 400px;">
+         
+     </iframe>
+     </form>
+  </div>
+<script>
+document .querySelector(".openChatBtn") .addEventListener("click", openForm);
+document.querySelector(".close").addEventListener("click", closeForm);
+function openForm() {
+document.querySelector(".openChatBtn").style.display = "none";
+document.querySelector(".openChat").style.display = "block";
+}
+function closeForm() {
+document.querySelector(".openChat").style.display = "none";
+document.querySelector(".openChatBtn").style.display = "block";
+}
+</script>
 </section>
 
 <!-- Template JavaScript -->
