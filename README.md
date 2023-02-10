@@ -32,8 +32,13 @@ This is a web based application developed for coffee shop named Dostea website i
 
 ## Technologies used
 
-- [Azure(Hosting)](https://azure.microsoft.com/en-in/features/azure-portal/)
-- Azure Bot Services
+- [Azure(Hosting)](https://azure.microsoft.com/en-in/features/azure-portal/) ![image](https://user-images.githubusercontent.com/114014530/218096791-6c0a0da3-e2da-4b96-8022-8153f5f359ff.png)
+
+- Azure Bot Services ![image](https://user-images.githubusercontent.com/114014530/218096888-d7853072-6187-4350-9e74-e784ce80676b.png)
+![image](https://user-images.githubusercontent.com/114014530/218096982-aa32a422-d947-4e45-aaf9-bdc361229236.png)
+![image](https://user-images.githubusercontent.com/114014530/218097270-ce026d19-6ce6-43e1-b3da-55160bc0cab2.png)
+
+
 - HTML
 - CSS
 - JavaScript
