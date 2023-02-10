@@ -32,12 +32,11 @@ This is a web based application developed for coffee shop named Dostea website i
 
 ## Technologies used
 
-- [Azure(Hosting)](https://azure.microsoft.com/en-in/features/azure-portal/) ![image](https://user-images.githubusercontent.com/114014530/218096791-6c0a0da3-e2da-4b96-8022-8153f5f359ff.png)
+- [Azure(Hosting)](https://azure.microsoft.com/en-in/features/azure-portal/) ![image](https://user-images.githubusercontent.com/114014530/218097560-475da01b-9a0c-443c-85c0-d6a21488e2d8.png)
 
-- Azure Bot Services ![image](https://user-images.githubusercontent.com/114014530/218096888-d7853072-6187-4350-9e74-e784ce80676b.png)
-![image](https://user-images.githubusercontent.com/114014530/218096982-aa32a422-d947-4e45-aaf9-bdc361229236.png)
-![image](https://user-images.githubusercontent.com/114014530/218097270-ce026d19-6ce6-43e1-b3da-55160bc0cab2.png)
-
+- Azure Bot Services ![image](https://user-images.githubusercontent.com/114014530/218097675-c16bfa8c-d934-41d6-b260-7c92d16a834f.png)
+![image](https://user-images.githubusercontent.com/114014530/218097732-7f9c7e7e-cd22-4d46-af6f-6823c5418dd2.png)
+![image](https://user-images.githubusercontent.com/114014530/218097763-408737d6-c912-4ab0-a238-eb4385008e15.png)
 
 - HTML
 - CSS
