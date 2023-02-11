@@ -14,6 +14,8 @@ This is a web based application developed for coffee shop named Dostea website i
 
 **Project Link** - https://red-sea-00b2c0300.2.azurestaticapps.net/index.html
 
+**Project Video Link** - https://youtu.be/rELqlf4GHHo
+
 
 
 
